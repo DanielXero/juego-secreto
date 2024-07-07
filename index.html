@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@700&family=Inter:wght@400;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>JS Game</title>
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="container__contenido">
+            <div class="container__informaciones">
+                <div class="container__texto">
+                    <h1></h1>
+                    <p class="texto__parrafo"></p>
+                </div>
+                <input type="number" id="valorUsuario" min="1" max="10" class="container__input">
+                <div class="chute container__botones">
+                    <button onclick="verificarIntento();" class="container__boton">Intentar</button>
+                    <button onclick="reiniciarJuego();" class="container__boton" id="reiniciar" disabled>Nuevo juego</button>
+                </div>
+            </div>
+            <img src="./img/ia.png" alt="Una persona mirando a la izquierda" class="container__imagen-persona" />
+        </div>
+    </div>
+
+
+
+
+    <script src="app.js" defer></script>
+</body>
+
+</html>
+
+<!--
+El atributo onclick en HTML: Agregando interactividad con clics
+El atributo onclick en HTML se utiliza para especificar una función JavaScript que se ejecutará cuando un usuario hace clic en un elemento. Es una forma declarativa de asociar detectores de eventos a elementos, lo que facilita la adición de interactividad a las páginas web sin necesidad de un código JavaScript excesivo dentro del propio HTML.
+
+¿Cómo funciona?
+
+Asociación del detector de eventos: El atributo onclick asocia una función JavaScript con un elemento HTML específico. Cuando el usuario hace clic en el elemento, el navegador ejecuta la función asociada.
+
+Ejecución de la función JavaScript: La función JavaScript definida en otra parte del código se activa cuando se hace clic en el elemento. Esta función puede realizar cualquier acción deseada, como actualizar el contenido de la página, navegar a otra página o manejar la entrada del usuario. 
+
+
+Todos los eventos de javascript comienza con el prefijo on
+ -->
